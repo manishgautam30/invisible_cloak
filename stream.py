@@ -16,3 +16,4 @@ while(cap.isOpened()):
         break
     hsv=cv2.cvtColor(img , cv2.COLOR_BGR2HSV)
     
+    lower_red = np.array(0, 120 , 70)
