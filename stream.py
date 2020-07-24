@@ -30,4 +30,5 @@ while(cap.isOpened()):
 
     mask1 = cv2.morphologyEx(mask1 ,cv2.MORPH_OPEN,np.ones((3,3),np.uint8),iterations=2)
     mask1 = cv2.morphologyEx(mask1 ,cv2.MORPH_DILATE,np.ones((3,3),np.uint8),iterations=1)
-    
+
+  
