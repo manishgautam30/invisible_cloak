@@ -42,3 +42,4 @@ while(cap.isOpened()):
     if k == 27: 
         break
     
+cap.release()
