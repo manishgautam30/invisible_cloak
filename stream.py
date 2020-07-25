@@ -1,9 +1,13 @@
 import numpy as np
 import cv2
 import time
+import win10toast
+
+notifi = win10toast.ToastNotifier()
+notifi.show_toast("Invisible_cloak","Hey Manish program has started",duration=3)
 
 cap = cv2.VideoCapture(0)
-time.sleep(3)
+time.sleep(2)
 
 background = 0
  
