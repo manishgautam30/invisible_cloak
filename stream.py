@@ -7,6 +7,9 @@ notifi = win10toast.ToastNotifier()
 notifi.show_toast("Invisible_cloak","Hey Manish program has started",duration=3)
 
 cap = cv2.VideoCapture(0)
+# address="https://192.168.1.3:8080/cap"
+# cap.open(address)
+
 time.sleep(2)
 
 background = 0
