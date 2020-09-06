@@ -7,9 +7,9 @@ import pyttsx3
 speak=pyttsx3.init()
 
 notifi = win10toast.ToastNotifier()
-notifi.show_toast("Invisible_cloak","Hey Manish program has started",duration=3)
+notifi.show_toast("Invisible_cloak","Hey Manish your program has started",duration=3)
 
-speak.say("hello Maneesh Welcome your video is going to be captured soon")
+speak.say("hello Maneesh Welcome your video is going to be captured soon sirr")
 speak.runAndWait()
 
 cap = cv2.VideoCapture(0)
@@ -21,7 +21,7 @@ time.sleep(2)
 
 background = 0
 
-speak.say("here is it in your service.")
+speak.say("here is it in your service ")
 speak.runAndWait()
 
 
@@ -61,7 +61,7 @@ while(cap.isOpened()):
     if k == 27: 
         break
     
-speak.say("Thankyou and have a goood day")
+speak.say("Thankyou for your visit,have a good day sir")
 speak.runAndWait()
 
 cap.release()
