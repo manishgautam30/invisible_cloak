@@ -2,21 +2,33 @@ import numpy as np
 import cv2
 import time
 import win10toast
+import pyttsx3
+
+speak=pyttsx3.init()
 
 notifi = win10toast.ToastNotifier()
 notifi.show_toast("Invisible_cloak","Hey Manish program has started",duration=3)
+
+speak.say("hello Maneesh Welcome your video is going to be captured soon")
+speak.runAndWait()
 
 cap = cv2.VideoCapture(0)
 # address="https://192.168.1.3:8080/cap"
 # cap.open(address)
 
+
 time.sleep(2)
 
 background = 0
- 
+
+speak.say("here is it in your service.")
+speak.runAndWait()
+
+
 for i in range(30):
     ret,background = cap.read()
     
+
 while(cap.isOpened()):
     ret,img = cap.read()
     if not ret:
@@ -49,6 +61,9 @@ while(cap.isOpened()):
     if k == 27: 
         break
     
+speak.say("Thankyou and have a goood day")
+speak.runAndWait()
+
 cap.release()
 cv2.destroyAllWindows()
 
